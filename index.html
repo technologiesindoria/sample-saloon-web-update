@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puja Sharma | Lakme Certified Beauty Salon</title>
@@ -411,7 +412,8 @@
         }
 
         .founder-image {
-            flex: 1;
+            flex: 0 0 42%;
+            max-width: 440px;
             position: relative;
         }
 
@@ -433,6 +435,11 @@
             aspect-ratio: 4/5;
         }
 
+        .founder-text {
+            flex: 1;
+            min-width: 0;
+        }
+
         .founder-text h2 {
             font-family: var(--font-display);
             font-size: 2.5rem;
@@ -448,12 +455,32 @@
             font-weight: 300;
         }
 
+        .founder-profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 32px;
+            padding-top: 28px;
+            border-top: 1px solid var(--bg-warm);
+        }
+
+        .founder-avatar {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--rose-light);
+            box-shadow: var(--shadow);
+            flex-shrink: 0;
+        }
+
         .signature {
             font-family: var(--font-display);
             font-size: 2.4rem;
             font-style: italic;
             color: var(--rose-deep);
-            margin-top: 28px;
+            margin-top: 0;
+            line-height: 1.1;
         }
 
         .founder-role {
@@ -1051,6 +1078,12 @@
                 padding-right: 5%;
             }
 
+            .founder-image {
+                flex: none;
+                max-width: 100%;
+                width: 100%;
+            }
+
             .automation-section {
                 padding: 40px 28px;
             }
@@ -1137,15 +1170,20 @@
 
     <section class="founder-section section-padding reveal">
         <div class="founder-image">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Puja Sharma - Founder">
+            <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=800&auto=format&fit=crop" alt="Puja Sharma - Founder of Puja Sharma Salon" loading="lazy">
         </div>
         <div class="founder-text">
             <span class="section-label" style="text-align: left;">Our Story</span>
             <h2>Welcome to Excellence</h2>
             <p>"Beauty is not just about aesthetics; it's about confidence. As a Lakme Certified professional, my vision has always been to bring international standards of grooming and beauty care to our local community."</p>
             <p>"We believe in using only the highest quality products and continuous training for our staff to ensure that every client walks out feeling empowered and beautiful. Your trust is our greatest achievement."</p>
-            <div class="signature">Puja Sharma</div>
-            <p class="founder-role">Founder & Lead Stylist</p>
+            <div class="founder-profile">
+                <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=200&auto=format&fit=crop" alt="Puja Sharma" class="founder-avatar" loading="lazy">
+                <div>
+                    <div class="signature">Puja Sharma</div>
+                    <p class="founder-role">Founder & Lead Stylist</p>
+                </div>
+            </div>
         </div>
     </section>
 
